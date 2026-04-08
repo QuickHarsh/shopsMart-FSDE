@@ -281,6 +281,10 @@ export function buildDashboardData(query = "") {
     return null;
   }
 
+  const currentBestPrice = Math.min(
+    ...product.platformOffers.map((offer) => offer.price),
+  );
+
   return {
     query,
     product: {
@@ -292,6 +296,12 @@ export function buildDashboardData(query = "") {
     history: product.priceHistory,
     recommendation: buildRecommendation(product),
     reviewSummary: product.reviewSummary,
+    priceSummary: {
+      currentBestPrice,
+      highestPrice: Math.max(
+        ...product.platformOffers.map((offer) => offer.price),
+      ),
+    },
     relatedProducts: catalog
       .filter((candidate) => candidate.id !== product.id)
       .slice(0, 3)
