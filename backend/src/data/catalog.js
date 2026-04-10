@@ -184,6 +184,52 @@ const catalog = [
       ],
     },
   },
+  {
+    id: "ipad-air-m2",
+    name: "iPad Air M2",
+    category: "Tablet",
+    aliases: ["ipad air m2", "ipad air", "apple ipad air"],
+    platformOffers: [
+      {
+        platform: "Amazon",
+        price: 54999,
+        rating: 4.7,
+        url: "https://www.amazon.in/",
+        availability: "In stock",
+      },
+      {
+        platform: "Flipkart",
+        price: 53499,
+        rating: 4.6,
+        url: "https://www.flipkart.com/",
+        availability: "In stock",
+      },
+      {
+        platform: "Apple Store",
+        price: 57999,
+        rating: 4.9,
+        url: "https://www.apple.com/in/",
+        availability: "Ships in 1 week",
+      },
+    ],
+    priceHistory: [
+      { date: "2026-03-24", price: 58999 },
+      { date: "2026-03-31", price: 57999 },
+      { date: "2026-04-07", price: 56499 },
+      { date: "2026-04-14", price: 55499 },
+      { date: "2026-04-21", price: 53499 },
+    ],
+    reviewSummary: {
+      pros: [
+        "Lightweight design keeps it easy to carry",
+        "The Flipkart listing is the lowest current price",
+      ],
+      cons: [
+        "The Apple Store price is still noticeably higher",
+        "Accessories push the total cost up quickly",
+      ],
+    },
+  },
 ];
 
 export function normalizeText(value = "") {
