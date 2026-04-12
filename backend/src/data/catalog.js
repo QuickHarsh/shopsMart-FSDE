@@ -230,6 +230,52 @@ const catalog = [
       ],
     },
   },
+  {
+    id: "sony-wh-1000xm5",
+    name: "Sony WH-1000XM5",
+    category: "Audio",
+    aliases: ["sony wh1000xm5", "wh-1000xm5", "sony xm5"],
+    platformOffers: [
+      {
+        platform: "Amazon",
+        price: 28999,
+        rating: 4.8,
+        url: "https://www.amazon.in/",
+        availability: "In stock",
+      },
+      {
+        platform: "Flipkart",
+        price: 27999,
+        rating: 4.7,
+        url: "https://www.flipkart.com/",
+        availability: "In stock",
+      },
+      {
+        platform: "Croma",
+        price: 29499,
+        rating: 4.8,
+        url: "https://www.croma.com/",
+        availability: "Limited stock",
+      },
+    ],
+    priceHistory: [
+      { date: "2026-03-24", price: 30999 },
+      { date: "2026-03-31", price: 30299 },
+      { date: "2026-04-07", price: 29499 },
+      { date: "2026-04-14", price: 28999 },
+      { date: "2026-04-21", price: 27999 },
+    ],
+    reviewSummary: {
+      pros: [
+        "Noise cancellation remains the strongest selling point",
+        "Flipkart currently offers the best price",
+      ],
+      cons: [
+        "The carry case takes up more space than some rivals",
+        "Stock can swing quickly during sales windows",
+      ],
+    },
+  },
 ];
 
 export function normalizeText(value = "") {
