@@ -276,6 +276,52 @@ const catalog = [
       ],
     },
   },
+  {
+    id: "dell-xps-13",
+    name: "Dell XPS 13",
+    category: "Laptop",
+    aliases: ["dell xps 13", "xps 13", "dell laptop"],
+    platformOffers: [
+      {
+        platform: "Amazon",
+        price: 104999,
+        rating: 4.6,
+        url: "https://www.amazon.in/",
+        availability: "In stock",
+      },
+      {
+        platform: "Flipkart",
+        price: 102499,
+        rating: 4.5,
+        url: "https://www.flipkart.com/",
+        availability: "In stock",
+      },
+      {
+        platform: "Dell Store",
+        price: 109999,
+        rating: 4.7,
+        url: "https://www.dell.com/",
+        availability: "Ships in 3 days",
+      },
+    ],
+    priceHistory: [
+      { date: "2026-03-24", price: 110999 },
+      { date: "2026-03-31", price: 108999 },
+      { date: "2026-04-07", price: 106999 },
+      { date: "2026-04-14", price: 104999 },
+      { date: "2026-04-21", price: 102499 },
+    ],
+    reviewSummary: {
+      pros: [
+        "Thin chassis makes it a strong travel machine",
+        "Flipkart currently has the sharpest deal",
+      ],
+      cons: [
+        "Premium price still keeps it above budget laptops",
+        "The base configuration can feel tight for heavy multitasking",
+      ],
+    },
+  },
 ];
 
 export function normalizeText(value = "") {
