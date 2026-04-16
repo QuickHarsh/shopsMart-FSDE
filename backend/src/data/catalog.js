@@ -322,6 +322,52 @@ const catalog = [
       ],
     },
   },
+  {
+    id: "galaxy-watch-6",
+    name: "Samsung Galaxy Watch 6",
+    category: "Wearable",
+    aliases: ["galaxy watch 6", "samsung watch 6", "watch 6"],
+    platformOffers: [
+      {
+        platform: "Amazon",
+        price: 25999,
+        rating: 4.5,
+        url: "https://www.amazon.in/",
+        availability: "In stock",
+      },
+      {
+        platform: "Flipkart",
+        price: 24999,
+        rating: 4.6,
+        url: "https://www.flipkart.com/",
+        availability: "In stock",
+      },
+      {
+        platform: "Samsung Store",
+        price: 26999,
+        rating: 4.7,
+        url: "https://www.samsung.com/in/",
+        availability: "Ships in 2 days",
+      },
+    ],
+    priceHistory: [
+      { date: "2026-03-24", price: 27999 },
+      { date: "2026-03-31", price: 27499 },
+      { date: "2026-04-07", price: 26999 },
+      { date: "2026-04-14", price: 25999 },
+      { date: "2026-04-21", price: 24999 },
+    ],
+    reviewSummary: {
+      pros: [
+        "Flipkart currently leads on price",
+        "Fitness features and ecosystem integration remain strong",
+      ],
+      cons: [
+        "The premium store listing is still noticeably higher",
+        "Band and accessory bundles can change the final price quickly",
+      ],
+    },
+  },
 ];
 
 export function normalizeText(value = "") {
