@@ -33,6 +33,22 @@ npm run dev
 
 Frontend runs on `http://localhost:5173` and proxies API calls to the backend on `http://localhost:4000`.
 
+## DevOps
+
+### Docker
+
+Build and run both services with Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+The frontend is served on `http://localhost:8080` and proxies `/api` requests to the backend container.
+
+### CI/CD
+
+The repository includes a GitHub Actions workflow that builds the backend and frontend container images on every push and pull request.
+
 ## API endpoints
 
 - `GET /api/health`
